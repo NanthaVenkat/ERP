@@ -15,7 +15,7 @@ interface Product {
   category: string; // Category of the product
   price: string; // Price of the product (as a string with currency symbol)
   // status: string; // Status of the product
-  image: string; // URL or path to the product image
+  // image: string; // URL or path to the product image
   status: "Delivered" | "Pending" | "Canceled"; // Status of the product
 }
 
@@ -28,7 +28,6 @@ const tableData: Product[] = [
     category: "Laptop",
     price: "$2399.00",
     status: "Delivered",
-    image: "/images/product/product-01.jpg", // Replace with actual image URL
   },
   {
     id: 2,
@@ -37,7 +36,6 @@ const tableData: Product[] = [
     category: "Watch",
     price: "$879.00",
     status: "Pending",
-    image: "/images/product/product-02.jpg", // Replace with actual image URL
   },
   {
     id: 3,
@@ -46,7 +44,6 @@ const tableData: Product[] = [
     category: "SmartPhone",
     price: "$1869.00",
     status: "Delivered",
-    image: "/images/product/product-03.jpg", // Replace with actual image URL
   },
   {
     id: 4,
@@ -55,7 +52,6 @@ const tableData: Product[] = [
     category: "Electronics",
     price: "$1699.00",
     status: "Canceled",
-    image: "/images/product/product-04.jpg", // Replace with actual image URL
   },
   {
     id: 5,
@@ -64,7 +60,6 @@ const tableData: Product[] = [
     category: "Accessories",
     price: "$240.00",
     status: "Delivered",
-    image: "/images/product/product-05.jpg", // Replace with actual image URL
   },
 ];
 
@@ -74,7 +69,7 @@ export default function RecentOrders() {
       <div className="flex flex-col gap-2 mb-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
-            Recent Orders
+            Recent Works
           </h3>
         </div>
 
@@ -161,13 +156,13 @@ export default function RecentOrders() {
               <TableRow key={product.id} className="">
                 <TableCell className="py-3">
                   <div className="flex items-center gap-3">
-                    <div className="h-[50px] w-[50px] overflow-hidden rounded-md">
+                    {/* <div className="h-[50px] w-[50px] overflow-hidden rounded-md">
                       <img
                         src={product.image}
                         className="h-[50px] w-[50px]"
                         alt={product.name}
                       />
-                    </div>
+                    </div> */}
                     <div>
                       <p className="font-medium text-gray-800 text-theme-sm dark:text-white/90">
                         {product.name}
