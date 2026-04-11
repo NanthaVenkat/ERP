@@ -68,7 +68,7 @@ export default function EcommerceMetrics() {
             <BoxIconLine className="text-gray-800 size-6 dark:text-white/90" />
           </div>
 
-          <Badge color="error">
+          <Badge color="success">
             <ArrowUpIcon />
             12.05%
           </Badge>
@@ -132,7 +132,7 @@ export default function EcommerceMetrics() {
               Expenses
             </span>
             <h4 className="mt-2 font-bold text-orange-500 text-title-sm">
-              3,782,500
+              1,782,500
             </h4>
           </div>
 
