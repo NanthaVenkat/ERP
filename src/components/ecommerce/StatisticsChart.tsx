@@ -132,7 +132,7 @@ export default function StatisticsChart() {
 
       <div className="max-w-full overflow-x-auto custom-scrollbar">
         <div className="min-w-[1000px] xl:min-w-full">
-          <Chart options={options} series={series} type="area" height={310} />
+          <Chart options={options} series={series} type="area" height={400}/>
         </div>
       </div>
     </div>

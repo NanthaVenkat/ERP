@@ -87,7 +87,7 @@ export default function MonthlySalesChart() {
   };
   const series = [
     {
-      name: "Sales",
+      name: "Revenue",
       data: [168, 385, 201, 298, 187, 195, 291, 110, 215, 390, 280, 112],
     },
   ];
@@ -133,7 +133,7 @@ export default function MonthlySalesChart() {
 
       <div className="max-w-full overflow-x-auto custom-scrollbar">
         <div className="-ml-5 min-w-[650px] xl:min-w-full pl-2">
-          <Chart options={options} series={series} type="bar" height={180} />
+          <Chart options={options} series={series} type="bar" height={400}/>
         </div>
       </div>
     </div>
