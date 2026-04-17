@@ -484,7 +484,7 @@ const Dashboard = ({ jobs, ledger, partsFund }) => {
           <div className="kpi-icon"><Icon.Parts /></div>
         </div>
         <div className="kpi-card blue">
-          <div className="kpi-label">Today's income</div>
+          <div className="kpi-label">Today&apos;s income</div>
           <div className="kpi-value">{fmt(todayIncome)}</div>
           <div className="kpi-sub">Collected today</div>
           <div className="kpi-icon"><Icon.Arrow /></div>
